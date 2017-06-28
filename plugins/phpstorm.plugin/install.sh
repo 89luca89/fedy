@@ -20,7 +20,7 @@ tar -xzf "$FILE" -C "/opt/"
 mv /opt/PhpStorm* "/opt/PhpStorm"
 ln -sf "/opt/PhpStorm/bin/phpstorm.sh" "/usr/bin/phpstorm"
 
-xdg-icon-resource install --novendor --size 256 "/opt/PhpStorm/bin/webide.png" "phpstorm"
+xdg-icon-resource install --novendor --size 128 "/opt/PhpStorm/bin/phpstorm.png" "phpstorm"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 cat <<EOF | tee /usr/share/applications/phpstorm.desktop

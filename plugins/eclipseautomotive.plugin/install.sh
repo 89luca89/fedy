@@ -11,7 +11,7 @@ mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
 BASEURL="http://mirror.cc.vt.edu/pub/eclipse/technology/epp/downloads/release"
-PRESENTRELEASE=$(wget $BASEURL/release.xml -O - | grep present | sed -n 's:.*<present>\(.*\)</present>.*:\1:p')
+PRESENTRELEASE="mars/2"
 PRODUCT=$(wget --quiet $BASEURL/$PRESENTRELEASE/$PACKAGE.xml -O - | grep "<product name=" | sed 's/.*"\(.*\)"[^"]*$/\1/')
 
 if [[ $(uname -m) == 'x86_64' ]]; then

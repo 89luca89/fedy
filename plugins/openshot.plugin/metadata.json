@@ -1,0 +1,19 @@
+{
+	"icon":"openshot-qt",
+	"label": "OpenShot",
+	"description": "Free and Open Source Video Editor",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query openshot" }
+	}
+}

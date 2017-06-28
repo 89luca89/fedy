@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dnf -y install libappindicator-gtk*
+
 CACHEDIR="/var/cache/fedy/sublimetext"
 
 if [[ "$(uname -m)" = "x86_64" ]]; then

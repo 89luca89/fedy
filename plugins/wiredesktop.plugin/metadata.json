@@ -1,0 +1,19 @@
+{
+	"icon": "wire-desktop",
+	"label": "Wire",
+	"description": "Crystal clear voice, video and group chats. No advertising. Always encrypted",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query wire-desktop" }
+	}
+}

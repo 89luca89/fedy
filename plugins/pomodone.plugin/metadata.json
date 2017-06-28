@@ -1,0 +1,19 @@
+{
+	"icon": "pomodone",
+	"label": "PomoDone",
+	"description": "PomoDoneApp is the easiest way to track your workflow using Pomodoro technique",
+	"license": "Proprietary",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /usr/bin/pomodone" }
+	}
+}

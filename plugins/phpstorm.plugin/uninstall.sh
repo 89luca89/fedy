@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xdg-icon-resource uninstall --novendor --size 256 "phpstorm"
+xdg-icon-resource uninstall --novendor --size 128 "phpstorm"
 
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 

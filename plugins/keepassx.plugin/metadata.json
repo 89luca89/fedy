@@ -1,0 +1,19 @@
+{
+	"icon":"keepassx2",
+	"label": "KeePassX 2.0",
+	"description": "Free and Open Source Password manager",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query keepassx" }
+	}
+}

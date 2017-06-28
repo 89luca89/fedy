@@ -1,0 +1,19 @@
+{
+	"icon":"asc-de",
+	"label": "OnlyOffice",
+	"description": "Free and Open Source Office Suite with a modern interface",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query onlyoffice-desktopeditors" }
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"icon":"skypeforlinux",
+	"label": "Skype for Linux (Beta)",
+	"description": "New Version of the Skype Client from Microsoft",
+	"license": "Adware",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query skypeforlinux" }
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"icon":"pixeluvo",
+	"label": "Pixeluvo",
+	"description": "A Beautifully Designed Image and Photo Editor for Windows and Linux",
+	"license": "Commercial with free 30 day trial",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query pixeluvo" }
+	}
+}

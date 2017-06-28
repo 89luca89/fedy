@@ -1,0 +1,19 @@
+{
+	"icon": "Headset",
+	"label": "Headset",
+	"description": "Headset is a desktop app that turns YouTube into a world class music streaming service",
+	"license": "",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /usr/bin/Headset" }
+	}
+}

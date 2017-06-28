@@ -1,0 +1,19 @@
+{
+	"icon": "cinelerra",
+	"label": "Cinelerra",
+	"description": "Cinelerra is a prosumer non-linear video editing system",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /opt/Cinelerra/bin/cinelerra" }
+	}
+}
