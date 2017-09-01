@@ -1,0 +1,19 @@
+{
+	"icon":"gnome-mpv",
+	"label": "Gnome MPV",
+	"description": "A simple GTK+ frontend for the powerful player MPV",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root dnf -y install gnome-mpv"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove gnome-mpv"
+		},
+		"status": { "command": "rpm --quiet --query gnome-mpv" }
+	}
+}
