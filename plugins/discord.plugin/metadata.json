@@ -1,0 +1,18 @@
+{
+	"icon": "discord",
+	"label": "Discord",
+	"description": "Discord is a freeware proprietary VoIP application designed for gaming communities",
+	"license": "Freeware",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -r /opt/Discord/Discord" }
+	}
+}
