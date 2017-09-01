@@ -1,0 +1,18 @@
+{
+	"icon": "lightworks",
+	"label": "LightWorks",
+	"description": "The complete professional video creation package",
+	"license": "Freemium",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove lightworks"
+		},
+		"status": { "command": "rpm --quiet --query lightworks" }
+	}
+}
