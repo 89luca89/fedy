@@ -1,0 +1,19 @@
+{
+	"icon":"QOwnNotes",
+	"label": "QOwnNotes",
+	"description": "QOwnNotes is a plain-text file notepad and todo-list manager with markdown support and ownCloud integration",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query qownnotes" }
+	}
+}
