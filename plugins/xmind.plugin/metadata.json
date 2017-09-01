@@ -1,0 +1,19 @@
+{
+	"icon": "xmind",
+	"label": "XMind",
+	"description": "The most popular mind mapping software ",
+	"license": "GPLv3",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /usr/bin/XMind" }
+	}
+}
