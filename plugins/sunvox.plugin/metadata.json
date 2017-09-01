@@ -1,0 +1,19 @@
+{
+	"icon": "sunvox",
+	"label": "Sunvox",
+	"description": "SunVox is a small, fast and powerful modular synthesizer with pattern-based sequencer (tracker)",
+	"license": "",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /usr/bin/sunvox" }
+	}
+}
