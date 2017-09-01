@@ -1,0 +1,19 @@
+{
+	"icon":"bleachbit",
+	"label": "Bleach Bit",
+	"description": "Python utility to free disk space and improve privacy",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root dnf -y install bleachbit"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove bleachbit"
+		},
+		"status": { "command": "rpm --quiet --query bleachbit" }
+	}
+}
