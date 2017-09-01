@@ -1,0 +1,19 @@
+{
+	"icon":"lmms",
+	"label": "LMMS",
+	"description": "Cross-platform music production software",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root dnf -y install lmms lmms-vst"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove lmms lmms-vst"
+		},
+		"status": { "command": "rpm --quiet --query lmms" }
+	}
+}
