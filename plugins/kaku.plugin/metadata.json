@@ -1,0 +1,19 @@
+{
+	"icon": "kaku",
+	"label": "Kaku",
+	"description": "Kaku is a music player that integrates with online platforms such as YouTube, SoundCloud, Vimeo, and more",
+	"license": "MIT",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /usr/bin/kaku" }
+	}
+}
