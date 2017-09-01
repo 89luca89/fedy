@@ -1,0 +1,19 @@
+{
+	"icon":"uget-icon",
+	"label": "uGet",
+	"description": "Download manager using GTK+ and libcurl",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root dnf -y install uget"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove uget"
+		},
+		"status": { "command": "rpm --quiet --query uget" }
+	}
+}
