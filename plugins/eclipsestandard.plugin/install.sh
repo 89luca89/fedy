@@ -10,14 +10,15 @@ INSTALLDIR="/opt/eclipse-$PACKAGE"
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-BASEURL="http://mirror.cc.vt.edu/pub/eclipse/technology/epp/downloads/release"
-PRESENTRELEASE=$(wget $BASEURL/release.xml -O - | grep present | sed -n 's:.*<present>\(.*\)</present>.*:\1:p')
-PRODUCT=$(wget --quiet $BASEURL/$PRESENTRELEASE/$PACKAGE.xml -O - | grep "<product name=" | sed 's/.*"\(.*\)"[^"]*$/\1/')
+	BASEURL="http://mirror.cc.vt.edu/pub/eclipse/technology/epp/downloads/release"
+	PRESENTRELEASE=$(wget $BASEURL/release.xml -O - | grep present | sed -n 's:.*<present>\(.*\)</present>.*:\1:p')
+	PRODUCT=$(echo $PRESENTRELEASE | sed 's/\//-/')
+
 
 if [[ $(uname -m) == 'x86_64' ]]; then
-	URL=$BASEURL/$PRESENTRELEASE/$PRODUCT-linux-gtk-x86_64.tar.gz
+	URL=$BASEURL/$PRESENTRELEASE/eclipse-java-$PRODUCT-linux-gtk-x86_64.tar.gz
 else
-	URL=$BASEURL/$PRESENTRELEASE/$PRODUCT-linux-gtk.tar.gz
+	URL=$BASEURL/$PRESENTRELEASE/eclipse-java-$PRODUCT-linux-gtk.tar.gz
 fi
 
 FILE=${URL##*/}
