@@ -1,0 +1,19 @@
+{
+	"icon":"messenger",
+	"label": "Facebook Messenger",
+	"description": "A simple & beautiful desktop client for Facebook Messenger",
+	"license": "MIT",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query messengerfordesktop" }
+	}
+}
