@@ -1,0 +1,19 @@
+{
+	"icon": "whatsapp",
+	"label": "WhatsApp",
+	"description": "Whatsie is an unofficial WhatsApp desktop client, based on the official WhatsApp web app",
+	"license": "MIT",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove whatsie"
+		},
+		"status": { "command": "rpm --quiet --query whatsie" }
+	}
+}
