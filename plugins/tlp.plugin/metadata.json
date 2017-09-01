@@ -1,0 +1,19 @@
+{
+	"icon": "gnome-power-manager",
+	"label": "Laptop Power Management",
+	"description": "Set up TLP and Powertop to improve laptops battery life",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Tweaks",
+	"scripts": {
+		"exec": {
+			"label": "Setup",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Revert",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query tlp " }
+	}
+}
