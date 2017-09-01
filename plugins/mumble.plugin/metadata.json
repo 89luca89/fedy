@@ -1,0 +1,19 @@
+{
+	"icon":"mumble",
+	"label": "Mumble",
+	"description": "Voice chat suite aimed at gamers",
+	"license": "BSD-style",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root dnf -y install mumble mumble-plugins"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove mumble mumble-plugins"
+		},
+		"status": { "command": "rpm --quiet --query mumble" }
+	}
+}
