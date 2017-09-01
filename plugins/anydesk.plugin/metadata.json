@@ -1,0 +1,19 @@
+{
+	"icon":"anydesk",
+	"label": "AnyDesk",
+	"description": "AnyDesk is the world's most comfortable remote desktop application. Access all your programs, documents and files from anywhere",
+	"license": "Proprietary",
+	"libre": false,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf remove -y anydesk"
+		},
+		"status": { "command": "rpm --quiet --query anydesk" }
+	}
+}
