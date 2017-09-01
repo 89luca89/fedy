@@ -12,7 +12,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root -s uninstall.sh"
+			"command": "run-as-root dnf -y remove wire-desktop"
 		},
 		"status": { "command": "rpm --quiet --query wire-desktop" }
 	}
