@@ -1,0 +1,19 @@
+{
+	"icon": "shotcut",
+	"label": "Shotcut",
+	"description": "Shotcut is a free, open source, cross-platform video editor",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /opt/Shotcut/Shotcut.app/shotcut" }
+	}
+}
