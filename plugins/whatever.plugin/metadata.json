@@ -1,0 +1,19 @@
+{
+	"icon": "whatever",
+	"label": "Whatever (Evernote)",
+	"description": "Whatever is a lightweight unofficial Evernote© client for Linux desktop",
+	"license": "MIT",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query Whatever" }
+	}
+}
