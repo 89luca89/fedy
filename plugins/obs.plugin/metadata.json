@@ -1,0 +1,19 @@
+{
+	"icon":"obs",
+	"label": "OBS Studio",
+	"description": "Open Broadcaster Software Studio",
+	"license": "GPLv2",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root dnf -y install obs-studio"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y remove obs-studio"
+		},
+		"status": { "command": "rpm --quiet --query obs-studio" }
+	}
+}
