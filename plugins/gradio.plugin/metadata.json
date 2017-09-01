@@ -1,0 +1,19 @@
+{
+	"icon": "de.haeckerfelix.gradio",
+	"label": "GRadio",
+	"description": "A GTK3 app for finding and listening to internet radio stations",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query gradio" }
+	}
+}
