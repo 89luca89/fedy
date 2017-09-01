@@ -1,0 +1,19 @@
+{
+	"icon": "soundnode",
+	"label": "Soundnode",
+	"description": "Soundnode App is an Open-Source project to support Soundcloud for desktop Linux",
+	"license": "GPLv3",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /opt/Soundnode/Soundnode" }
+	}
+}
