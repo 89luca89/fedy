@@ -1,4 +1,4 @@
-#!/bin.bash
+#!/bin/bash
 
 dnf -y install tlp tlp-rdw powertop smartmontools
 systemctl enable powertop.service

@@ -1,4 +1,4 @@
-#!/bin.bash
+#!/bin/bash
 
 tlp false
 systemctl disable powertop.service
