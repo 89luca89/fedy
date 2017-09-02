@@ -1,8 +1,14 @@
-#!/bin/bash
+#!/bin/env bash
 
+VERSION=$(wget https://anydesk.com/download -O - |\
+    grep -e "v.[0-9].[0-9].[0-9]" |\
+    head -n 1 |\
+    sed 's/<small>//' |\
+    sed 's/<\/small><br>//' |\
+    sed 's/ //g' |\
+    sed 's/\t//g')
 
 arch | grep x86_64
-VERSION=$(wget https://anydesk.com/download -O - | grep -e "v.[0-9].[0-9].[0-9]" | head -n 1 | sed 's/<small>//' | sed 's/<\/small><br>//' | sed 's/ //g' | sed 's/\t//g')
 if (( $? == 0));then
 	# 64 bit
 	URL="https://download.anydesk.com/linux/rhel7/anydesk-"$VERSION"-1.el7.x86_64.rpm"
