@@ -1,4 +1,5 @@
 {
+    "icon": "simplenote",
 	"label": "Simplenote",
 	"description": "A Simplenote React app packaged in Electron.",
 	"license": "GPLv2",

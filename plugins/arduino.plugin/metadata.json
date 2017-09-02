@@ -1,4 +1,5 @@
 {
+    "icon": "arduino",
 	"label": "Arduino",
 	"description": "The open-source Arduino Software (IDE).",
 	"license": "GNU GPLv2",

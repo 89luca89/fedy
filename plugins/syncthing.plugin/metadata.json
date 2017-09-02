@@ -1,4 +1,5 @@
 {
+    "icon": "syncthing",
 	"label": "Syncthing",
 	"description": "Open Source Continuous File Synchronization.",
 	"license": ["MPLv2","GPLv2"],

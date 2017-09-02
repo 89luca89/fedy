@@ -1,4 +1,5 @@
 {
+    "icon": "input-mouse",
 	"label": "Disable mouse acceleration",
 	"description": "Disabling mouse acceleration will make the speed of your mouse cursor always the same.",
 	"category": "Tweaks",

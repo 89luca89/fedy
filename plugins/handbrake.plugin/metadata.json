@@ -1,4 +1,5 @@
 {
+    "icon": "fr.handbrake.ghb",
 	"label": "HandBrake",
 	"description": "The open source video transcoder.",
 	"license": "GPLv2",
