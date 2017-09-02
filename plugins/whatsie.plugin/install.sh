@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dnf -y install libappindicator-gtk*
+dnf -y install libappindicator-gtk2 libappindicator-gtk3
 
 CACHEDIR="/var/cache/fedy/WhatsApp";
 
