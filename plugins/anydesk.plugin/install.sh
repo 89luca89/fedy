@@ -1,5 +1,9 @@
 #!/bin/env bash
 
+CACHEDIR="/var/cache/fedy/Anydesk";                                                                                                                           
+mkdir -p "$CACHEDIR"    
+cd "$CACHEDIR"
+
 VERSION=$(wget https://anydesk.com/download -O - |\
     grep -e "v.[0-9].[0-9].[0-9]" |\
     head -n 1 |\
@@ -16,5 +20,5 @@ else
 	# 32 bit 
 	URL="https://download.anydesk.com/linux/rhel7/anydesk-"$VERSION"-1.el7.i686.rpm"
 fi
-wget $URL -O "/var/cache/fedy/anydesk.rpm"
-dnf -y install "/var/cache/fedy/anydesk.rpm"
+wget $URL -O "/var/cache/fedy/Anydesk/anydesk.rpm"
+dnf -y install "/var/cache/fedy/Anydesk/anydesk.rpm"
