@@ -5,7 +5,7 @@ CACHEDIR="/var/cache/fedy/shotcut";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-URL=$(wget "https://github.com/mltframework/shotcut/releases" -O - | grep tar.bz2 | head -n4 | sed 's/<a href=\"//g' | sed 's/\" rel=\"nofollow\">//g' | grep -v strong | head -n 1)
+URL=$(wget "https://github.com/mltframework/shotcut/releases/latest" -O - | grep tar.bz2 | sed 's/<a href=\"//g' | sed 's/\" rel=\"nofollow\">//g'| grep -v strong | head -n 1)
 
 URL=$(echo "www.github.com"$URL | sed 's/ //g')
 FILE=${URL##*/}
