@@ -8,10 +8,10 @@ cd "$CACHEDIR"
 arch | grep x86_64
 if (( $? == 0));then
 	# 64 bit
-	URL="https://spideroak.com/getbuild?platform=fedora&arch=x86_64"
+	URL="https://spideroak.com/release/spideroak/rpm_x64"
 else
 	# 32 bit
-	URL="https://spideroak.com/getbuild?platform=fedora&arch=i386"
+	URL="https://spideroak.com/release/spideroak/rpm_x86"
 fi
 FILE="spideroak.rpm"
 
