@@ -2,8 +2,7 @@
 	"icon": "sunvox",
 	"label": "Sunvox",
 	"description": "SunVox is a small, fast and powerful modular synthesizer with pattern-based sequencer (tracker)",
-	"license": "",
-	"libre": false,
+	"license": "BSD",
 	"category": "Apps",
 	"scripts": {
 		"exec": {
