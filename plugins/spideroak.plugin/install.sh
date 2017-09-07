@@ -5,8 +5,7 @@ CACHEDIR="/var/cache/fedy/spideroak";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-arch | grep x86_64
-if (( $? == 0));then
+if command arch | grep 'x86_64'; then
 	# 64 bit
 	URL="https://spideroak.com/release/spideroak/rpm_x64"
 else
@@ -22,5 +21,4 @@ if [[ ! -f "$FILE" ]]; then
 fi
 
 dnf -y install $FILE
-
 

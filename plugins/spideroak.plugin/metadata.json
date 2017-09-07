@@ -1,8 +1,8 @@
 {
 	"icon": "SpiderOakONE",
-	"label": "SpiderOak One",
+	"label": "SpiderOak ONE",
 	"description": "Secure, reliable backup to protect your files from data loss and ransomware",
-	"license": "Freemium",
+	"license": "Freemium
 	"category": "Apps",
 	"scripts": {
 		"exec": {
